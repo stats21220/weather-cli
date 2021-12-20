@@ -1,9 +1,12 @@
 {
-  "name": "weather-cli",
+  "name": "weather-cli-2342",
   "version": "1.0.0",
   "description": "CLI for getting weather",
-  "main": "index.js",
-  "bin": "./index.js",
+  "main": "weather.js",
+  "bin": {
+    "weather": "weather.js"
+  },
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -16,10 +19,15 @@
   "homepage": "https://purpleschool.ru",
   "repository": {
     "type": "git",
-    "url": "https://purpleschool.ru"
+    "url": "https://github.com/stats21220/weather-cli.git"
   },
   "bugs": {
     "url": "https://purpleschool.ru",
     "email": "https://purpleschool.ru"
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "chalk": "^5.0.0",
+    "dedent-js": "^1.0.1"
   }
 }
